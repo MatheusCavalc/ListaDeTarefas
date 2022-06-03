@@ -2,10 +2,10 @@
 
 class Conexao {
 
-    private $host = 'localhost';
-    private $dbname = 'db_listadetarefas';
-    private $user = 'root';
-    private $pass = '78832112';
+    private $host = 'localhost'; // local
+    private $dbname = 'db_listadetarefas'; // nome do banco de dados
+    private $user = 'root'; // usuario
+    private $pass = ''; // senha do usuario
 
     public function conectar() {
         try {
