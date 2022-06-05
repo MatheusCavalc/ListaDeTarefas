@@ -3,8 +3,6 @@
 	$acao = 'pendentes';
 	require 'tarefa_controller.php';
 
-	// print_r($tarefas);
-
 ?>
 
 <html>
