@@ -117,11 +117,11 @@
 										<?= $tarefa->tarefa ?> (<?= $tarefa->status ?>)
 									</div>
 									<div class="col-sm-3 mt-2 d-flex justify-content-between">
-										<i class="fas fa-trash-alt fa-lg text-danger" onclick="remover(<?= $tarefa->id ?>)" ></i>
+										<i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;" onclick="remover(<?= $tarefa->id ?>)" ></i>
 										
 									<?php if( $tarefa->status == 'pendente' ) { ?>	
-										<i class="fas fa-edit fa-lg text-info" onclick="editar(<?= $tarefa->id ?>, '<?= $tarefa->tarefa ?>')"></i>
-										<i class="fas fa-check-square fa-lg text-success" onclick="realizada(<?= $tarefa->id ?>)"></i>
+										<i class="fas fa-edit fa-lg text-info" style="cursor: pointer;" onclick="editar(<?= $tarefa->id ?>, '<?= $tarefa->tarefa ?>')"></i>
+										<i class="fas fa-check-square fa-lg text-success" style="cursor: pointer;" onclick="realizada(<?= $tarefa->id ?>)"></i>
 									<?php } ?>
 									
 									</div>
